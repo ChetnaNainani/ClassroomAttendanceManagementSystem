@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D60A706F-CEE3-4DE8-AB4F-35F16F2B9550}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ClassroomAttendance.My.MyApplication</StartupObject>
+    <RootNamespace>ClassroomAttendance</RootNamespace>
+    <AssemblyName>ClassroomAttendance</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ClassroomAttendance.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ClassroomAttendance.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>ClassroomAttendance.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>ClassroomAttendance.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addclass.Designer.vb">
+      <DependentUpon>addclass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addclass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addnotice.designer.vb">
+      <DependentUpon>addnotice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addnotice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addstudent.Designer.vb">
+      <DependentUpon>addstudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addstudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminstart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminstart.Designer.vb">
+      <DependentUpon>adminstart.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="defaulters.Designer.vb">
+      <DependentUpon>defaulters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="defaulters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteclass.Designer.vb">
+      <DependentUpon>deleteclass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deleteclass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletestudent.Designer.vb">
+      <DependentUpon>deletestudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deletestudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteteacher.Designer.vb">
+      <DependentUpon>deleteteacher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deleteteacher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="displaynotice.designer.vb">
+      <DependentUpon>displaynotice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="displaynotice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="facultydetails.Designer.vb">
+      <DependentUpon>facultydetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="facultydetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leaveapplication.Designer.vb">
+      <DependentUpon>leaveapplication.vb</DependentUpon>
+    </Compile>
+    <Compile Include="leaveapplication.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="operations.Designer.vb">
+      <DependentUpon>operations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="operations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerteacher.Designer.vb">
+      <DependentUpon>registerteacher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registerteacher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectdatefortake.Designer.vb">
+      <DependentUpon>selectdatefortake.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selectdatefortake.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectdateforview.designer.vb">
+      <DependentUpon>selectdateforview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selectdateforview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setTimetable.Designer.vb">
+      <DependentUpon>setTimetable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="setTimetable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="start.Designer.vb">
+      <DependentUpon>start.vb</DependentUpon>
+    </Compile>
+    <Compile Include="start.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentinformation.Designer.vb">
+      <DependentUpon>studentinformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="studentinformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="takeattendance.designer.vb">
+      <DependentUpon>takeattendance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="takeattendance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherstart.Designer.vb">
+      <DependentUpon>teacherstart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="teacherstart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateattendance.designer.vb">
+      <DependentUpon>updateattendance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updateattendance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatestudent.Designer.vb">
+      <DependentUpon>updatestudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updatestudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateteacher.Designer.vb">
+      <DependentUpon>updateteacher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="updateteacher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewattendance.designer.vb">
+      <DependentUpon>viewattendance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewattendance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewtimetable.Designer.vb">
+      <DependentUpon>viewtimetable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewtimetable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="addclass.resx">
+      <DependentUpon>addclass.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addnotice.resx">
+      <DependentUpon>addnotice.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addstudent.resx">
+      <DependentUpon>addstudent.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminstart.resx">
+      <DependentUpon>adminstart.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="defaulters.resx">
+      <DependentUpon>defaulters.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteclass.resx">
+      <DependentUpon>deleteclass.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletestudent.resx">
+      <DependentUpon>deletestudent.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteteacher.resx">
+      <DependentUpon>deleteteacher.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="displaynotice.resx">
+      <DependentUpon>displaynotice.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="facultydetails.resx">
+      <DependentUpon>facultydetails.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leaveapplication.resx">
+      <DependentUpon>leaveapplication.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operations.resx">
+      <DependentUpon>operations.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerteacher.resx">
+      <DependentUpon>registerteacher.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectdatefortake.resx">
+      <DependentUpon>selectdatefortake.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectdateforview.resx">
+      <DependentUpon>selectdateforview.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setTimetable.resx">
+      <DependentUpon>setTimetable.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="start.resx">
+      <DependentUpon>start.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentinformation.resx">
+      <DependentUpon>studentinformation.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="takeattendance.resx">
+      <DependentUpon>takeattendance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherstart.resx">
+      <DependentUpon>teacherstart.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateattendance.resx">
+      <DependentUpon>updateattendance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatestudent.resx">
+      <DependentUpon>updatestudent.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateteacher.resx">
+      <DependentUpon>updateteacher.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewattendance.resx">
+      <DependentUpon>viewattendance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewtimetable.resx">
+      <DependentUpon>viewtimetable.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Knowledge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jadwal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jadwal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new user.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar-simbolo-de-contacto-para-la-interfaz_318-46960.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact-details--ios-7-interface-symbol_318-33582.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-vector-vector-illustration-of-a-checklist-with-a-detailed-pencil-checking-off-tasks-126009953.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conference-room.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21936872-Training-icon-Stock-Vector-presentation.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-alt-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout--ios-7-interface-symbol_318-33643.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red-plus-md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_remove %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\105-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9396080-Pulsante-Aggiorna-lucido-Archivio-Fotografico.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14516142-update-icon-on-glossy-orange-round-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-alt-5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-alt-5122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-alt-5123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14516142-update-icon-on-glossy-orange-round-button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout--ios-7-interface-symbol_318-336431.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Knowledge1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
